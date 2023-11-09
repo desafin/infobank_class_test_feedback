@@ -211,39 +211,15 @@ int main()
 	cout << "Sorted Radio Channels:" << endl;
 	manager.displayChannels(channel, len);
 
-	manager.bubbleSortChannels(channel, len);//채널숫자로 소트하기
-	cout << "Sorted TV Channels:" << endl;
-	manager.displayChannels(channel, len);
-
-	manager.bubbleSortChannels(channel, len); //채널숫자로 소트하기
-	cout << "Sorted TVRadio Channels:" << endl;
-	manager.displayChannels(channel, len);
-
-
 	cout << "요구사항 1끝" << endl;
 
 
 	cout << "요구사항 2 " << endl;
 
-	//BaseChannel* allChannels = new BaseChannel[9];//동적배열
-
-	//for (int i = 0; i < 3; i++) {//배열에 모든 객체를 집어넣는다
-	//	allChannels[i] = radioChannels[i];
-	//}
-	//for (int i = 0; i < 4; i++) {
-	//	allChannels[3 + i] = tvChannels[i];
-	//}
-	//for (int i = 0; i < 2; i++) {
-	//	allChannels[7 + i] = tvRadioChannels[i];
-	//}
-
-	manager.bubbleSortChannels(channel, 3);
-	cout << "Sorted Channels:" << endl;
-	manager.displayChannels(channel, 3);
-
-	manager.bubbleSortChannelsByName(channel, 3);
+	
+	manager.bubbleSortChannelsByName(channel, len);
 	cout << "Sorted Channels by Name:" << endl;
-	manager.displayChannels(channel, 3);
+	manager.displayChannels(channel, len);
 
 	cout << "요구사항 2 끝" << endl;
 
